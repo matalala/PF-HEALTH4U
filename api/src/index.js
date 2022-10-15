@@ -31,7 +31,7 @@ app.use((error, req, res, next) => {
     res.status(400).send(name + message);
 });
 
-app.listen(3001, () =>
+app.listen(process.env.PORT, () =>
 { // puerto 3001
     console.log('Server listening on port 3001'); // eslint-disable-line no-console
 });
