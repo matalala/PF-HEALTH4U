@@ -25,7 +25,7 @@ const checkRole = require ("./checkRole")
 //     }
 // });
 router.get('/', (req,res)=>{
-res.send('hola muncdo')
+res.send('server configured and ready')
 })
 router.use('/doctors', doctors)
 router.use('/patients', patients)
