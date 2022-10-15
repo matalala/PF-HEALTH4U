@@ -30,8 +30,8 @@ app.use((error, req, res, next) => {
     // console.error(error);
     res.status(400).send(name + message);
 });
-
-app.listen(process.env.PORT, () =>
+const host=process.env.HOST||"0.0.0.0"
+app.listen(process.env.PORT,host () =>
 { // puerto 3001
     console.log('Server listening on port 3001'); // eslint-disable-line no-console
 });
