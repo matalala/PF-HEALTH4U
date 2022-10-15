@@ -24,7 +24,9 @@ const checkRole = require ("./checkRole")
 //         router.use(`/${name}`, require(`./${file}`)); //http:localhost:3000/api/tracks
 //     }
 // });
-
+router.use('/', (req,res)=>{
+res.send('hola muncdo')
+})
 router.use('/doctors', doctors)
 router.use('/patients', patients)
 router.use('/appointments', appointments)
